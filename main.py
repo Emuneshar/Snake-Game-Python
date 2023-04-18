@@ -23,6 +23,18 @@ def move():
     if head.direction == "up":
         y = head.ycor()
         head.sety(y+20)
+    
+    if head.direction == "down":
+        y = head.ycor()
+        head.sety(y-20)
+
+    if head.direction == "right":
+        x = head.xcor()
+        head.setx(x+20)
+
+    if head.direction == "left":
+        x = head.xcor()
+        head.sety(y-20)
 
 
 # Main game loop
@@ -31,7 +43,7 @@ while True:
     window.update()
 
     move()
-    
+
     time.sleep(delay)
 
 window.mainloop()
