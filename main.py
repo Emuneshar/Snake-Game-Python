@@ -1,4 +1,7 @@
 import turtle
+import time
+
+delay = 0.1
 
 window = turtle.Screen()
 window.title("Snake Game")
@@ -26,5 +29,9 @@ def move():
 
 while True:
     window.update()
+
+    move()
+    
+    time.sleep(delay)
 
 window.mainloop()
