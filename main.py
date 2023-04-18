@@ -15,5 +15,9 @@ head.penup()
 head.goto(0,0,)
 head.direction = "stop"
 
+# Main game loop
+
+while True:
+    window.update()
 
 window.mainloop()
