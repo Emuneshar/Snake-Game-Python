@@ -13,7 +13,14 @@ head.shape("square")
 head.color("white")
 head.penup()
 head.goto(0,0,)
-head.direction = "stop"
+head.direction = "up"
+
+# Functions
+def move():
+    if head.direction == "up":
+        y = head.ycor()
+        head.sety(y+20)
+
 
 # Main game loop
 
