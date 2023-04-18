@@ -19,6 +19,18 @@ head.goto(0,0,)
 head.direction = "right"
 
 # Functions
+def goUp():
+    head.direction = "up"
+
+def goDown():
+    head.direction = "down"
+
+def goLeft():
+    head.direction = "left"
+
+def goRight():
+    head.direction = "right"
+
 def move():
     if head.direction == "up":
         y = head.ycor()
@@ -35,6 +47,14 @@ def move():
     if head.direction == "left":
         x = head.xcor()
         head.sety(y-20)
+
+# Keyboard Bindings
+window.listen()
+window.onkeypress(goUp, "Up")
+window.onkeypress(goDown, "Down")
+window.onkeypress(goLeft, "Left")
+window.onkeypress(goRight, "Right")
+
 
 
 # Main game loop
