@@ -81,6 +81,13 @@ while True:
         y = random.randint(-290,290)
         food.goto(x, y) 
 
+    # Adding new body segment to the snake
+    newSegment = turtle.Turtle()
+    newSegment.speed(0)
+    newSegment.shape("square")
+    newSegment.color("grey")
+    bodySegments.append(newSegment)
+
     move()
 
     time.sleep(delay)
