@@ -73,6 +73,7 @@ window.onkeypress(goRight, "Right")
 while True:
     window.update()
 
+    # Checking for collisions with food
     # Each basic shape in turtle is 20px by 20px
     if head.distance(food) < 20:
         # Move food to a random spot on the screen
