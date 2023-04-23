@@ -92,6 +92,7 @@ while True:
     for i in range(len(bodySegments)-1, 0, -1):
         x = bodySegments[i-1].xcor()
         y = bodySegments[i-1].ycor()
+        bodySegments[i].goto(x, y)
 
     move()
 
