@@ -81,12 +81,17 @@ while True:
         y = random.randint(-290,290)
         food.goto(x, y) 
 
-    # Adding new body segment to the snake
-    newSegment = turtle.Turtle()
-    newSegment.speed(0)
-    newSegment.shape("square")
-    newSegment.color("grey")
-    bodySegments.append(newSegment)
+        # Adding new body segment to the snake
+        newSegment = turtle.Turtle()
+        newSegment.speed(0)
+        newSegment.shape("square")
+        newSegment.color("grey")
+        bodySegments.append(newSegment)
+
+    # Moving the end segment first
+    for i in range(len(bodySegments)-1, 0, -1):
+        x = bodySegments[i-1].xcor()
+        y = bodySegments[i-1].ycor()
 
     move()
 
