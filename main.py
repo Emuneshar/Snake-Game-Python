@@ -1,5 +1,6 @@
 import turtle
 import time
+import random
 
 delay = 0.1
 
@@ -15,8 +16,17 @@ head.speed(0)
 head.shape("square")
 head.color("white")
 head.penup()
-head.goto(0,0,)
-head.direction = ""
+head.goto(0,0)
+head.direction = "stop"
+
+# Apple (Food)
+food = turtle.Turtle()
+food.speed(0)
+food.shape("circle")
+food.color("yellow")
+food.penup()
+food.goto(0,100)
+
 
 # Functions
 def goUp():
@@ -61,6 +71,13 @@ window.onkeypress(goRight, "Right")
 
 while True:
     window.update()
+
+    # Each basic shape in turtle is 20px by 20px
+    if head.distance(food) < 20:
+        # Move food to a random spot on the screen
+        x = random.randint(-290,290)
+        y = random.randint(-290,290)
+        food.goto(x, y) 
 
     move()
 
