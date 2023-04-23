@@ -93,6 +93,14 @@ while True:
         x = bodySegments[i-1].xcor()
         y = bodySegments[i-1].ycor()
         bodySegments[i].goto(x, y)
+    
+    # Add code to move the first body segment to where the head is 
+    if len(bodySegments) > 0:
+        x = head.xcor()
+        y = head.ycor()
+        bodySegments[0].goto(x, y)
+        
+
 
     move()
 
