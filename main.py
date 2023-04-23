@@ -16,7 +16,7 @@ head.shape("square")
 head.color("white")
 head.penup()
 head.goto(0,0,)
-head.direction = "right"
+head.direction = ""
 
 # Functions
 def goUp():
@@ -46,7 +46,7 @@ def move():
 
     if head.direction == "left":
         x = head.xcor()
-        head.sety(y-20)
+        head.setx(x-20)
 
 # Keyboard Bindings
 window.listen()
