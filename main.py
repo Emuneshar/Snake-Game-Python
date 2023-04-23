@@ -86,6 +86,7 @@ while True:
         newSegment.speed(0)
         newSegment.shape("square")
         newSegment.color("grey")
+        newSegment.penup()
         bodySegments.append(newSegment)
 
     # Moving the end segment first
