@@ -6,7 +6,7 @@ delay = 0.1
 
 window = turtle.Screen()
 window.title("Snake Game")
-window.bgcolor("black")
+window.bgcolor("green")
 window.setup(width=600, height=600)
 window.tracer(0)
 
@@ -99,7 +99,7 @@ while True:
         x = head.xcor()
         y = head.ycor()
         bodySegments[0].goto(x, y)
-        
+
 
 
 
