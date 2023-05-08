@@ -13,7 +13,7 @@ window.tracer(0)
 # Snake Head
 head = turtle.Turtle()
 head.speed(0)
-head.shape("square")
+head.shape("turtle")
 head.color("white")
 head.penup()
 head.goto(0,0)
@@ -84,7 +84,7 @@ while True:
         # Adding new body segment to the snake
         newSegment = turtle.Turtle()
         newSegment.speed(0)
-        newSegment.shape("square")
+        newSegment.shape("turtle")
         newSegment.color("grey")
         newSegment.penup()
         bodySegments.append(newSegment)
