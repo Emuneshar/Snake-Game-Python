@@ -22,7 +22,7 @@ head.direction = "stop"
 # Apple (Food)
 food = turtle.Turtle()
 food.speed(0)
-food.shape("circle")
+food.shape("square")
 food.color("yellow")
 food.penup()
 food.goto(0,100)
